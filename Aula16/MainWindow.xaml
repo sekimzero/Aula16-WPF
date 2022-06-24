@@ -22,7 +22,7 @@
             <ColumnDefinition Width="14"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="14"/>
+            <RowDefinition Height="18"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="14"/>
             <RowDefinition Height="15"/>
@@ -33,32 +33,46 @@
             Grid.Column="0"
             Grid.ColumnSpan="11"
         />
-        <ListBox 
-            x:Name="Arquivo" 
-            Grid.Column="0" 
-            Grid.Row="0"
-            
-        />
-        <Menu 
-            Grid.Column="0" 
-            Grid.ColumnSpan="11"
-            Grid.Row="0"
-            >
-            <MenuItem
-                Header= "Arquivo" 
-                >
-                <MenuItem
-                Header="Novo"
-                />
+        
+        <Menu Grid.Column="0"  Grid.ColumnSpan="11" Grid.Row="0">
+            <MenuItem Header= "Arquivo">
+                <MenuItem Header="Novo"/>
+                <MenuItem Header="Nova Janela"/>
+                <MenuItem Header="Abrir"/>
+                <MenuItem Header="Salvar"/>
+                <MenuItem Header="Salvar Como"/>
+                <MenuItem Header="Configurar Página"/>
+                <MenuItem Header="Imprimir"/>
+                <MenuItem Header="Sair"/>
             </MenuItem>
-            <MenuItem
-                Header= "Editar" 
-                >
-                <MenuItem
-                Header="Novo"
-                />
+            <MenuItem Header= "Editar">
+                <MenuItem Header="Desfazer"/>
+                <MenuItem Header="Recortar"/>
+                <MenuItem Header="Copiar"/>
+                <MenuItem Header="Colar"/>
+                <MenuItem Header="Excluir"/>
+                <MenuItem Header="Buscar com o Bing..."/>
+                <MenuItem Header="Localizar..."/>
+                <MenuItem Header="Localizar Próxima"/>
+                <MenuItem Header="Localizar Anterior"/>
+                <MenuItem Header="Substituir"/>
+                <MenuItem Header="Ir Para"/>
+                <MenuItem Header="Selecionar Tudo"/>
+                <MenuItem Header="Hora/Data"/>
             </MenuItem>
-            
+            <MenuItem Header= "Formatar">
+                <MenuItem Header= "Quebra Automática de Linha"/>
+                <MenuItem Header= "Fonte"/>
+            </MenuItem>
+            <MenuItem Header= "Exibir">
+                <MenuItem Header= "Zoom"/>
+                <MenuItem Header= "Barra de Status"/>
+            </MenuItem>
+            <MenuItem Header= "Ajuda">
+                <MenuItem Header= "Exibir Ajuda"/>
+                <MenuItem Header= "Enviar Comentários"/>
+                <MenuItem Header= "Sobre Bloco de Notas"/>
+            </MenuItem>
         </Menu>
     </Grid>
 </Window>
