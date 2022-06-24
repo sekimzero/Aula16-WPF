@@ -7,4 +7,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="blocoDeNotasIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="blocoDeNotasIcon.png" />
+  </ItemGroup>
+
 </Project>
