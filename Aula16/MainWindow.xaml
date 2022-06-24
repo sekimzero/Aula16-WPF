@@ -26,13 +26,14 @@
             <RowDefinition Height="20"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="17"/>
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
 
         <TextBox
             Grid.Row="1"
             Grid.Column="0"
             Grid.ColumnSpan="11"
+            TextWrapping="Wrap"
         />
 
         <Menu Grid.Column="0"  Grid.ColumnSpan="11" Grid.Row="0">
@@ -88,6 +89,31 @@
             Grid.Row="0"
             Grid.RowSpan="3"
             Orientation="Vertical"   
+        />
+
+        <Label 
+            Content="Ln 1, Col 1"
+            Grid.Row="3"
+            Grid.Column="5"
+        />
+
+        <Label 
+            Content="100%"
+            Grid.Row="3"
+            Grid.Column="7"
+        />
+
+        <Label 
+            Content="Windows (CRLF)"
+            Grid.Row="3"
+            Grid.Column="8"
+            Grid.ColumnSpan="2"
+        />
+
+        <Label 
+            Content="UTF-8"
+            Grid.Row="3"
+            Grid.Column="10"
         />
     </Grid>
 </Window>
