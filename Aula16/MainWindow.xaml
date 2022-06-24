@@ -28,10 +28,37 @@
             <RowDefinition Height="15"/>
         </Grid.RowDefinitions>
 
-        <TextBlock
+        <TextBox
             Grid.Row="1"
             Grid.Column="0"
-            Grid.ColumnSpan="10"
+            Grid.ColumnSpan="11"
         />
+        <ListBox 
+            x:Name="Arquivo" 
+            Grid.Column="0" 
+            Grid.Row="0"
+            
+        />
+        <Menu 
+            Grid.Column="0" 
+            Grid.ColumnSpan="11"
+            Grid.Row="0"
+            >
+            <MenuItem
+                Header= "Arquivo" 
+                >
+                <MenuItem
+                Header="Novo"
+                />
+            </MenuItem>
+            <MenuItem
+                Header= "Editar" 
+                >
+                <MenuItem
+                Header="Novo"
+                />
+            </MenuItem>
+            
+        </Menu>
     </Grid>
 </Window>
